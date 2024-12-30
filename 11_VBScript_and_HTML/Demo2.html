@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VBScript Click Event</title>
+</head>
+<body>
+
+    <h1>Click the Button</h1>
+    <p id="result"></p>
+
+    <!-- VBScript Section -->
+    <script type="text/vbscript">
+        Sub ChangeText()
+            document.getElementById("result").innerHTML = "Button was clicked!"
+        End Sub
+    </script>
+
+    <!-- Button to trigger VBScript -->
+    <button onclick="ChangeText()">Click Me</button>
+
+</body>
+</html>

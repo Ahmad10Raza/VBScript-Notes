@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation with VBScript</title>
+</head>
+<body>
+
+    <h1>Form Validation</h1>
+    <form name="myForm">
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="text" name="age"><br><br>
+        <input type="button" value="Submit" onclick="ValidateForm()">
+    </form>
+
+    <script type="text/vbscript">
+        Sub ValidateForm()
+            Dim name, age
+            name = document.myForm.name.value
+            age = document.myForm.age.value
+
+            If name = "" Then
+                MsgBox "Name is required!"
+            ElseIf age = "" Then
+                MsgBox "Age is required!"
+            Else
+                MsgBox "Form submitted successfully!"
+            End If
+        End Sub
+    </script>
+
+</body>
+</html>

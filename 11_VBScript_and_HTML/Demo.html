@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VBScript Example</title>
+</head>
+<body>
+
+    <h1>VBScript in HTML</h1>
+    <p id="demo"></p>
+
+    <!-- VBScript Section -->
+    <script type="text/vbscript">
+        ' VBScript code goes here
+        Sub ShowMessage()
+            document.getElementById("demo").innerHTML = "Hello from VBScript!"
+        End Sub
+    </script>
+
+    <!-- Button to trigger VBScript -->
+    <button onclick="ShowMessage()">Click Me</button>
+
+</body>
+</html>
